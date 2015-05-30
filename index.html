@@ -2,20 +2,143 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KoCapp</title>
 
     <!-- KoCapp references -->
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <script src="scripts/jquery-2.1.4.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.js"></script>
 </head>
 <body>
-    <p>Hello, your application is ready!</p>
-
+ 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
 
     <script src="scripts/index.js"></script>
-    <div class="MainMenu" id="mmPrays"> </div>
-    <div class="MainMenu" id="mmPrays"> </div>
+    
+    <!-- Main Menu -->
+    <div data-role="page" id="main_menu">
+        <div dat-role="header" class="ui-state-persist">KoC</div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a data-role="button" href="#prayers">
+                        <span class="i18-en">Prayers</span>
+                        <span class="i18-pl">Modlitwy</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-role="button" href="#documents">
+                        <span class="i18-en">Documents</span>
+                        <span class="i18-pl">Dokumenty</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-role="button" href="#calendar">
+                        <span class="i18-en">Calendar</span>
+                        <span class="i18-pl">Kalendarz</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>        
+        
+        <div data-role="footer"></div>
+    </div>
+
+    <!-- Prayers Menu -->
+    <div data-role="page" id="prayers">
+        
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a data-role="button" href="#our_father">
+                        <span class="i18-en">Our Father</span>
+                        <span class="i18-pl">Ojcze nasz</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-role="button" href="#hail_mary">
+                        <span class="i18-en">The Hail Mary</span>
+                        <span class="i18-pl">Zdrowaś Mario</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <div data-role="footer"></div>
+    </div>
+
+    <!-- Items -->
+    <!-- Our Father -->
+    <div data-role="page" id="our_father">
+        <div data-role="content">
+            <div class="i18-en">
+                Our Father, Who art in heaven, Hallowed be Thy Name. 
+                Thy Kingdom come. Thy Will be done, on earth as it is in Heaven.
+                Give us this day our daily bread. And forgive us our trespasses,
+                as we forgive those who trespass against us. And lead us not 
+                into temptation, but deliver us from evil. Amen.
+            </div>
+            <div class="i18-pl">
+                Ojcze nasz, któryś jest w niebie
+                święć się imię Twoje;
+                przyjdź królestwo Twoje;
+                bądź wola Twoja jako w niebie tak i na ziemi;
+                chleba naszego powszedniego daj nam dzisiaj;
+                i odpuść nam nasze winy,
+                jako i my odpuszczamy naszym winowajcom;
+                i nie wódź nas na pokuszenie;
+                ale nas zbaw od złego.
+                Amen. 
+            </div>
+            <div class="i18-lat">
+                Pater noster, qui es in caelis
+                sanctificetur nomen tuum;
+                adveniat regnum tuum;
+                fiat voluntas tua sicut in caelo et in terra;
+                panem nostrum quotidianum da nobis hodie;
+                et dimitte nobis debita nostra,
+                sicut et nos dimittimus debitoribus nostris;
+                et ne nos inducas in tentationem;
+                sed libera nos a malo.
+                Amen.
+            </div>
+        </div>
+    </div>
+
+    <!-- Hail Mary -->
+    <div data-role="page" id="hail_mary">
+        <div data-role="content">
+            <div class="i18-en">
+                Hail Mary, full of grace, The Lord is with thee Blessed art thou
+                among women and blessed is the fruit of thy womb, Jesus. Holy Mary, 
+                Mother of God, pray for us sinners now and at the hour of our death.
+                Amen.
+            </div>
+            <div class="i18-pl">
+                Zdrowaś Maryjo,
+                łaski pełna, Pan z Tobą,
+                błogosławionaś Ty między niewiastami
+                i błogosławiony owoc żywota Twojego, Jezus.
+                Święta Maryjo, Matko Boża,
+                módl się za nami grzesznymi
+                teraz i w godzinę śmierci naszej.
+                Amen.
+            </div>
+            <div class="i18-lat">
+                Ave Maria, gratia plena, Dominus tecum,benedicta tu in mulieribus,
+                et benedictus fructus ventris tui Iesus.
+                Sancta Maria mater Dei,ora pro nobis peccatoribus, nunc, et in 
+                hora mortis nostrae. Amen.
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

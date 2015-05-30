@@ -111,6 +111,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="images\" />
+    <Content Include="css\jquery.mobile-1.4.5.css" />
+    <Content Include="css\jquery.mobile-1.4.5.min.css" />
+    <Content Include="css\jquery.mobile.external-png-1.4.5.css" />
+    <Content Include="css\jquery.mobile.external-png-1.4.5.min.css" />
+    <Content Include="css\jquery.mobile.icons-1.4.5.css" />
+    <Content Include="css\jquery.mobile.icons-1.4.5.min.css" />
+    <Content Include="css\jquery.mobile.inline-png-1.4.5.css" />
+    <Content Include="css\jquery.mobile.inline-png-1.4.5.min.css" />
+    <Content Include="css\jquery.mobile.inline-svg-1.4.5.css" />
+    <Content Include="css\jquery.mobile.inline-svg-1.4.5.min.css" />
+    <Content Include="css\jquery.mobile.structure-1.4.5.css" />
+    <Content Include="css\jquery.mobile.structure-1.4.5.min.css" />
+    <Content Include="css\jquery.mobile.theme-1.4.5.css" />
+    <Content Include="css\jquery.mobile.theme-1.4.5.min.css" />
     <Content Include="LICENSE" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
@@ -133,7 +147,12 @@
     </Content>
     <Content Include="index.html" />
     <Content Include="README.md" />
+    <Content Include="res\screens\koc-splash.png" />
     <Content Include="scripts\index.js" />
+    <Content Include="scripts\jquery-1.11.3.min.js" />
+    <Content Include="scripts\jquery-2.1.4.js" />
+    <Content Include="scripts\jquery.mobile-1.4.5.js" />
+    <Content Include="scripts\jquery.mobile-1.4.5.min.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
